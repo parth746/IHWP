@@ -1,0 +1,141 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f7fa;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  background: #2b3a67;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Task Input */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.task-input {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+#taskInput, #dueDate {
+  padding: 10px;
+  border: 2px solid #2b3a67;
+  border-radius: 8px;
+}
+
+#taskInput {
+  width: 220px;
+}
+
+#addTaskBtn {
+  padding: 10px 15px;
+  border: none;
+  background: #2b3a67;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#addTaskBtn:hover {
+  background: #4054b2;
+}
+
+/* Filters */
+.filters {
+  margin-top: 20px;
+}
+
+.filter-btn {
+  background: white;
+  border: 2px solid #2b3a67;
+  color: #2b3a67;
+  border-radius: 5px;
+  padding: 8px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background: #2b3a67;
+  color: white;
+}
+
+/* Task List */
+#taskList {
+  list-style: none;
+  padding: 0;
+  width: 350px;
+  margin-top: 20px;
+}
+
+#taskList li {
+  background: white;
+  padding: 12px 15px;
+  margin: 8px 0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+#taskList li:hover {
+  transform: scale(1.02);
+}
+
+.task-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.task-info small {
+  color: gray;
+  font-size: 0.8rem;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+button.delete {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.delete:hover {
+  background: #c0392b;
+}
+
+/* Footer */
+footer {
+  background: #2b3a67;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9rem;
+}
